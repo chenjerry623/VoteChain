@@ -87,6 +87,11 @@
     {
       "inputs": [
         {
+          "internalType": "uint256",
+          "name": "electionId",
+          "type": "uint256"
+        },
+        {
           "internalType": "string",
           "name": "candidate",
           "type": "string"
