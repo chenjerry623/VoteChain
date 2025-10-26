@@ -43,7 +43,7 @@ VoteChain/
 │   └── package.json
 ├── hardhat.config.ts
 └── README.md
-
+```
 
 ## ⚙️ Setup Instructions
 
