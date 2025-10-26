@@ -27,21 +27,22 @@ It allows users to connect their MetaMask wallet, cast one on-chain vote per acc
 - 🪶 Clean, responsive UI (React + TypeScript)
 
 ---
-
 ## 🧰 Project Structure
+
+```bash
 VoteChain/
-├─ contracts/ # Solidity smart contracts
-│ └─ VoteChain.sol
-├─ scripts/ # Deployment scripts
-│ └─ deploy.ts
-├─ frontend/ (votechain-frontend)
-│ ├─ src/
-│ │ ├─ App.tsx
-│ │ ├─ VoteChainABI.json
-│ │ └─ global.d.ts
-│ └─ package.json
-├─ hardhat.config.ts
-└─ README.md
+├── contracts/               # Solidity smart contracts
+│   └── VoteChain.sol
+├── scripts/                 # Deployment scripts
+│   └── deploy.ts
+├── frontend/ (votechain-frontend)
+│   ├── src/
+│   │   ├── App.tsx
+│   │   ├── VoteChainABI.json
+│   │   └── global.d.ts
+│   └── package.json
+├── hardhat.config.ts
+└── README.md
 
 
 ## ⚙️ Setup Instructions
