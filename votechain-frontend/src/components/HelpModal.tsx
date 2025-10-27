@@ -30,7 +30,7 @@ export default function HelpModal() {
               </li>
               <li>
                 <strong>Switch to Sepolia Test Network:</strong>  
-                Click the top right dropdown in MetaMask → select Networks → scroll down and check "show test networks" → select Sepolia.
+                  Click the top right dropdown in MetaMask → select Networks → scroll down and check "show test networks" → select Sepolia.
               </li>
               <li>
                 <strong>Get free Sepolia ETH:</strong>{" "}
