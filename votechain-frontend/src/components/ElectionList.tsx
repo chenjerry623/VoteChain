@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ethers } from "ethers";
+import HelpModal from "./HelpModal";
 
 
 interface ElectionListProps {
@@ -59,6 +60,7 @@ export default function ElectionList({ contract, account, onSelect }: ElectionLi
           </div>
         ))}
       </div>
+      <HelpModal /> 
     </div>
   );
 }

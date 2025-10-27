@@ -1,3 +1,5 @@
+import HelpModal from "./HelpModal";
+
 interface Props {
   connectWallet: () => void;
 }
@@ -24,6 +26,8 @@ export default function ConnectWallet({ connectWallet }: Props) {
       >
         Connect Wallet
       </button>
+      <HelpModal /> 
     </div>
+
   );
 }

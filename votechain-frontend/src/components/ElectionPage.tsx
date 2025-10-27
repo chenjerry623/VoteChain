@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import { ethers } from "ethers";
+import HelpModal from "./HelpModal";
 
 
 interface Props {
@@ -67,6 +68,7 @@ export default function ElectionPage({ electionId, contract, onBack }: Props) {
           </button>
         </div>
       ))}
+      <HelpModal /> 
     </div>
   );
 }
