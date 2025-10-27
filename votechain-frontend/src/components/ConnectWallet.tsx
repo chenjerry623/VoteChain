@@ -2,9 +2,11 @@ interface Props {
   connectWallet: () => void;
 }
 
+
+
 export default function ConnectWallet({ connectWallet }: Props) {
   return (
-    <div style={{ textAlign: "center", padding: "3rem" }}>
+    <div style={{ textAlign: "center", padding: "3rem" }}  className="center-page">
       <h1>VoteChain 🗳️</h1>
       <p style={{ maxWidth: "600px", margin: "0 auto", lineHeight: "1.5rem" }}>
         Welcome to VoteChain — a decentralized voting platform powered by

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ethers } from "ethers";
 
+
 interface ElectionListProps {
   contract: ethers.Contract;
   account: string;
@@ -14,6 +15,7 @@ export default function ElectionList({ contract, account, onSelect }: ElectionLi
   async function loadElections() {
     try {
       const [names, ids] = await contract.getAllElections();
+      console.log("🧭 Raw elections fetched:", names, ids);
       const list = ids.map((id: bigint, i: number) => ({
         id: Number(id),
         name: names[i],
@@ -34,7 +36,7 @@ export default function ElectionList({ contract, account, onSelect }: ElectionLi
     return <p style={{ textAlign: "center" }}>Loading elections...</p>;
 
   return (
-    <div style={{ textAlign: "center", padding: "2rem" }}>
+    <div style={{ textAlign: "center", padding: "2rem" }}  className="center-page">
       <h2>Welcome, {account.slice(0, 6)}...</h2>
       <h3>Select an election:</h3>
 

@@ -5,8 +5,9 @@ import VoteChainABI from "./VoteChainABI.json";
 import ConnectWallet from "./components/ConnectWallet";
 import ElectionList from "./components/ElectionList";
 import ElectionPage from "./components/ElectionPage";
+import "./App.css";
 
-const CONTRACT_ADDRESS = "0x2967e5717899ca052C793ea1C5FD3b8DB4BCDCf8";
+const CONTRACT_ADDRESS = "0x211a5967D2B881074A70BfdD164ea66073E566C7";
 
 function App() {
   const [account, setAccount] = useState<string>("");

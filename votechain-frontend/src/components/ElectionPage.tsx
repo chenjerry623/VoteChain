@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { ethers } from "ethers";
 
+
 interface Props {
   electionId: number;
   contract: ethers.Contract;
@@ -54,7 +55,7 @@ export default function ElectionPage({ electionId, contract, onBack }: Props) {
   return (
 
     
-    <div style={{ textAlign: "center", padding: "2rem" }}>
+    <div style={{ textAlign: "center", padding: "2rem" }}  className="center-page">
       <button onClick={onBack}>⬅ Back</button>
       <h2>Election #{electionId}</h2>
       {loading && <p>⏳ Processing...</p>}
