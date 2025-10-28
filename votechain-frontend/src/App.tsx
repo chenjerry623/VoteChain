@@ -7,7 +7,7 @@ import ElectionList from "./components/ElectionList";
 import ElectionPage from "./components/ElectionPage";
 import "./App.css";
 
-const CONTRACT_ADDRESS = "0x211a5967D2B881074A70BfdD164ea66073E566C7";
+const CONTRACT_ADDRESS = "0x983B386bEd1D7964E66C1A789B24D668Bc1Fe3C7";
 
 function App() {
   const [account, setAccount] = useState<string>("");
