@@ -32,7 +32,7 @@ function App() {
   // load contract when connected
   useEffect(() => {
     if (provider && account) {
-      const contract = new ethers.Contract(CONTRACT_ADDRESS, VoteChainABI.abi, provider);
+      const contract = new ethers.Contract(CONTRACT_ADDRESS, VoteChainABI, provider);
       setContract(contract);
     }
   }, [provider, account]);
